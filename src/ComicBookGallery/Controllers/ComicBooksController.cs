@@ -11,7 +11,8 @@ namespace ComicBookGallery.Controllers
     {
         public ActionResult Detail()
         {
-            var comicBook = new ComicBook() {
+            var comicBook = new ComicBook()
+            {
                 SeriesTitle = "The Amazing Spider-Man",
                 IssueNumber = 700,
                 DescriptionHtml = "<p>Final issue! Witness the final hours of Doctor Octopus' life and his one, last, great act of revenge! Even if Spider-Man survives... <strong>will Peter Parker?</strong></p>",
@@ -23,10 +24,10 @@ namespace ComicBookGallery.Controllers
                     new Models.Artist() { Name = "Edgar Delgado", Role = "Colors" },
                     new Models.Artist() { Name = "Chris Eliopoulos", Role = "Letters" },
                 }
-        };
+            };
 
 
-        return View(comicBook);
+            return View(comicBook);
         }
     }
 }
